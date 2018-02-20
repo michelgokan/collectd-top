@@ -26,7 +26,8 @@ in `/opt/collectd/etc/collectd.conf`:
         BaseName "Collectd::Plugins"
         LoadPlugin "Top"
         <Plugin "top">
-                TopProcessesCount "4"
+                TopProcessesCountByMemory "4"
+                TopProcessesCountByCPU "5"
         </Plugin>
 </Plugin>
 ...
