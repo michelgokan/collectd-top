@@ -3,7 +3,7 @@
 
 A simple collectd plugin to send memory and CPU usage (in percentage) of top N processes (default 3).
 
-##INSTALLATION
+## INSTALLATION
 
 To install this module type the following:
 
@@ -32,10 +32,10 @@ in `/opt/collectd/etc/collectd.conf`:
 ...
 ````
 
-##DEPENDENCIES
+## DEPENDENCIES
 
 This module requires no special dependency
 
-##COPYRIGHT AND LICENCE
+## COPYRIGHT AND LICENCE
 
 Collectd-Plugins-Top by Michel Gokan is licensed under a Creative Commons Attribution 4.0 International License.
