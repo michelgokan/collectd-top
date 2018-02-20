@@ -1,40 +1,41 @@
 #Collectd-Plugins-Top version 0.01
 =================================
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
-
-A README file is required for CPAN modules since CPAN extracts the
-README file from a module distribution so that people browsing the
-archive can use it get an idea of the modules uses. It is usually a
-good idea to provide version information here so that people can
-decide whether fixes for the module are worth downloading.
+A simple collectd plugin to send memory and CPU usage (in percentage) of top N processes (default 3).
 
 INSTALLATION
 
 To install this module type the following:
 
+````
    perl Makefile.PL
    make
    make test
    make install
+````
+
+in `/opt/collectd/etc/collectd.conf`:
+
+````
+...
+<LoadPlugin "perl">
+  Globals true
+</LoadPlugin>
+...
+<Plugin perl>
+        BaseName "Collectd::Plugins"
+        LoadPlugin "Top"
+        <Plugin "top">
+                TopProcessesCount "4"
+        </Plugin>
+</Plugin>
+...
+````
 
 DEPENDENCIES
 
-This module requires these other modules and libraries:
-
-  blah blah blah
+This module requires no special dependency
 
 COPYRIGHT AND LICENCE
 
-Put the correct copyright and licence information here.
-
-Copyright (C) 2018 by root
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.22.1 or,
-at your option, any later version of Perl 5 you may have available.
-
-
+Collectd-Plugins-Top by Michel Gokan is licensed under a Creative Commons Attribution 4.0 International License.
