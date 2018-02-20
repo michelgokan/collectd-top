@@ -1,4 +1,4 @@
-# Collectd-Plugins-Top version 0.01
+# collectd-top Plugin
 =================================
 
 A simple collectd plugin to send memory and CPU usage (in percentage) of top N processes (default 3).
