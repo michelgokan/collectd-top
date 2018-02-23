@@ -46,7 +46,7 @@ sub top_read
 		$v->{'values'} = [ $chunk[0] ],
 		plugin_dispatch_values($v);
 		
-		plugin_log(LOG_NOTICE, "TOP - Values MEMORY $counter - $chunk[0],$chunk[1],$chunk[2],$chunk[3]");
+#		plugin_log(LOG_NOTICE, "TOP - Values MEMORY $counter - $chunk[0],$chunk[1],$chunk[2],$chunk[3]");
 		$counter++;	
 	}
 	
@@ -59,7 +59,7 @@ sub top_read
 		$v->{'values'} = [ $chunk[1] ],
 		plugin_dispatch_values($v);
 		
-		plugin_log(LOG_NOTICE, "TOP - Values CPU $counter - $chunk[0],$chunk[1],$chunk[2],$chunk[3]");
+#		plugin_log(LOG_NOTICE, "TOP - Values CPU $counter - $chunk[0],$chunk[1],$chunk[2],$chunk[3]");
 		$counter++;	
 	}
 	
