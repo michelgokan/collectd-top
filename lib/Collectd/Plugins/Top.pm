@@ -5,6 +5,7 @@ use warnings;
 
 use Collectd qw( :all );
 
+our $VERSION = 1;
 my %CONFIG;
 
 sub top_init{

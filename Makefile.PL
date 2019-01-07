@@ -7,6 +7,6 @@ WriteMakefile(
     VERSION_FROM      => 'lib/Collectd/Plugins/Top.pm', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/Collectd/Plugins/Top.pm', # retrieve abstract from module
+      (ABSTRACT => 'collectd-top: A plugin to measure and send top processes by CPU or Memory',
        AUTHOR         => 'root <root@>') : ()),
 );
